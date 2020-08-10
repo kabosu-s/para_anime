@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* =======================================
+
+	 CSS BrowserReset BaseElements
+
+ ======================================= */
+html, body, div, span, nav, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li, fieldset, form, label, button, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header, hgroup,
+main, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-style: inherit;
+	font-weight: inherit;
+	background: transparent;
+}
+
+html {
+	font-size: 62.5%;
+	line-height: 1;
+	overflow-y: scroll;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+strong {
+	font-weight: bold;
+}
+
+ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	vertical-align: top;
+}
+
+input, select {
+	vertical-align: middle;
+}
+
+textarea {
+	resize: vertical;
+}
+
+button {
+	cursor: pointer;
+}
+
+option {
+	padding-right: 10px;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: none;
+}
+
+/* ------------------------------
+	HTML5 ELEMENTS
+------------------------------ */
+header, footer, article, section, aside,
+main, nav, menu, details, summary, figcaption, figure {
+	display: block;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}

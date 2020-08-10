@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import url("//fonts.googleapis.com/css?family=Marcellus&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+/* =======================================
+CommonElements
+======================================= */
+body {
+  position: relative;
+  height: 100%;
+  color: #2e2624;
+  word-wrap: break-word;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", YuGothic, YuGothicM, "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Verdana, Arial, Helvetica, sans-serif;
+  overflow-wrap: break-word;
+  -webkit-text-size-adjust: 100%;
+}
+
+.gradient {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1;
+  background: linear-gradient(45deg, rgba(232, 240, 238, 0.2), rgba(185, 231, 233, 0.9));
+  background-size: 400% 400%;
+  height: 100vh;
+  -webkit-animation: test 4s ease infinite;
+  animation: test 4s ease infinite;
+}
+
+@-webkit-keyframes test {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@keyframes test {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+section h1 span {
+  font-size: 16px;
+  letter-spacing: 3rem;
+  text-indent: 3rem;
+  display: block;
+  color: #fff;
+  line-height: 50px;
+}
+
+section h1 {
+  position: sticky;
+  top: 35%;
+  margin: auto;
+  text-align: center;
+  z-index: 10;
+  color: white;
+  letter-spacing: 0;
+  font-size: 100px;
+  width: 100%;
+  text-shadow: 1px 1px 10px rgba(86, 119, 111, 0.5);
+  font-family: "Cinzel", serif;
+  line-height: 90px;
+}
+
+section h1:before {
+  content: "";
+  width: 380px;
+  height: 380px;
+  border: 10px solid #fff;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  -webkit-box-shadow: 1px 1px 10px rgba(130, 134, 72, 0.3), inset -1px -1px 10px rgba(86, 119, 111, 0.3);
+  box-shadow: 1px 1px 10px rgba(130, 134, 72, 0.3), inset -1px -1px 10px rgba(86, 119, 111, 0.3);
+  z-index: -1;
+  background: rgba(157, 187, 179, 0.1);
+}
+
+#animation_img_box {
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1;
+}
+
+#animation_img {
+  width: 100%;
+}
+
+.scrolldown {
+  display: block;
+  position: sticky;
+  left: 50%;
+  top: calc(100vh - 50px);
+  width: 2px;
+  height: 0;
+  background: #fff;
+  -webkit-animation: sdl 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  animation: sdl 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  -webkit-box-shadow: 0 0 3px rgba(86, 119, 111, 0.5);
+  box-shadow: 0 0 3px rgba(86, 119, 111, 0.5);
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  z-index: 100;
+}
+
+@-webkit-keyframes sdl {
+  0% {
+    height: 50px;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  50% {
+    height: 50px;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  50.1% {
+    height: 50px;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+  75%, 100% {
+    height: 50px;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+}
+
+@keyframes sdl {
+  0% {
+    height: 50px;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  50% {
+    height: 50px;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  50.1% {
+    height: 50px;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+  75%, 100% {
+    height: 50px;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+}
